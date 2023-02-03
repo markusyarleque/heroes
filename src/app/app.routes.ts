@@ -1,6 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 
 //& Componentes
+import { AboutComponent } from './componentes/about/about.component';
 import { BuscadorComponent } from './componentes/buscador/buscador.component';
 import { Error404Component } from './componentes/error404/error404.component';
 import { HeroeComponent } from './componentes/heroe/heroe.component';
@@ -12,6 +13,7 @@ const APP_ROUTES: Routes = [
   { path: 'heroes', component: HeroesComponent },
   { path: 'heroe/:id', component: HeroeComponent },
   { path: 'buscar/:termino', component: BuscadorComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'error404', component: Error404Component },
   { path: '**', pathMatch: 'full', redirectTo: 'error404' },
 ];

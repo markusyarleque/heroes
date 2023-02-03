@@ -17,7 +17,9 @@ export class BuscadorComponent implements OnInit {
   ) {}
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => {
+      this.termino = params['termino'];
       this.heroes = this.heroesService.buscarHeroe(params['termino']);
+      //console.log(this.heroes);
     });
   }
 }

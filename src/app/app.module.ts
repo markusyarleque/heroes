@@ -15,9 +15,11 @@ import { HeroeTarjetaComponent } from './componentes/heroe-tarjeta/heroe-tarjeta
 import { HeroesComponent } from './componentes/heroes/heroes.component';
 import { HeroeComponent } from './componentes/heroe/heroe.component';
 import { BuscadorComponent } from './componentes/buscador/buscador.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { AboutComponent } from './componentes/about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, Error404Component, HeroeTarjetaComponent, HeroesComponent, HeroeComponent, BuscadorComponent],
+  declarations: [AppComponent, HomeComponent, Error404Component, HeroeTarjetaComponent, HeroesComponent, HeroeComponent, BuscadorComponent, NavbarComponent, AboutComponent],
   imports: [BrowserModule, APP_ROUTING],
   providers: [HeroesService],
   bootstrap: [AppComponent],
